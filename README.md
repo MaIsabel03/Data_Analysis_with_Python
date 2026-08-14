@@ -51,7 +51,7 @@ Enter your first name: marcela
 Enter your last name: redondo
 Hello Redondo, Marcela
 Maximum grade you can get for this class is: 1000
-Client IP: 136.35.172.212
+Client IP: XXX.XX.XXX.XXX
 Day of Year: 275
 UTC Datetime: 2025-10-03T00:43:11.103257+00:00
 You have completed 8 weeks of 8
