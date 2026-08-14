@@ -1,0 +1,20 @@
+[
+{
+"name": "discussions",
+"display_name": "Discussions",
+"tasks_per_semester": 8,
+"maximum_points_per_task": 50
+},
+{
+"name": "course_projects",
+"display_name": "Course Projects",
+"tasks_per_semester": 8,
+"maximum_points_per_task": 50
+},
+{
+"name": "core_assessments",
+"display_name": "Core Assessments",
+"tasks_per_semester": 4,
+"maximum_points_per_task": 50
+}
+]
