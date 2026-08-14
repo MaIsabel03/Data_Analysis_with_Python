@@ -17,7 +17,7 @@ This approach allows the program to:
 - Generate a final percentage and letter grade
 - Provide information about course progress
 
-## **Key Features**
+## **Key Features** 
 
 - Data processing with Python and Pandas
 - Reads assignment rules from a JSON file
