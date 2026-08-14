@@ -1,25 +1,36 @@
-# **Grade Estimator (Final Project Units 1–8)**
+# **Grade Estimator -- Data Analysis with Python Class**
 
-This project is a Python program developed step by step through Units 1–8. It calculates the estimated course grade using scores from discussions, course projects, and core assessments. The program reads data from external files instead of hardcoding values, so it automatically updates if the grades or assignment rules change.
+The Grade Estimator is a Python-based data processing and analysis project developed as the final project for CIS615: Data Analysis with Python. The program processes course assignment data from external JSON and CSV files, validates and cleans grade data, integrates with the World Time API, and calculates total points, percentages, and final letter grades.
 
-## **What the Program Does**
+The project was developed incrementally across Units 1–8, with each unit adding new functionality and building toward the final program.
 
-- **Unit 1 →** Asks for your first and last name, cleans it up, and prints a greeting.
-- **Units 2–4 →** In earlier units, grades were hardcoded, but now all grades come from files (JSON and CSV).
-- **Unit 5 →** Reads tasks.json to know how many assignments there are and their maximum points.
-- **Unit 6 →** Connects to the World Time API to show the current date, time, and how many weeks of the class have passed.
-- **Unit 7 →** Loads grades.csv and cleans the grades (removes negatives, caps scores at maximum, keeps blanks).
-- **Unit 8 →** Reads grades_0.csv or grades_50.csv, calculates total points, maximum points, percentage, and a letter grade (A–F).
+## **What the Program Does?**
 
-## **Features**
+The program automates the process of estimating a student's course grade by using assignment rules and grade data stored in external files rather than relying on hardcoded values.
 
-- Greets the user with their name (formatted Last, First).  
-- Reads assignment rules from `tasks.json`.  
-- Loads grades from external CSV files instead of hardcoding.  
-- Cleans grades (removes negatives, caps scores, keeps blanks).  
-- Connects to the World Time API to show current date, time, client IP, and class progress.  
-- Calculates averages, total points, percentage, and final letter grade (A–F).  
-- Supports multiple grade scenarios (`grades_0.csv` vs. `grades_50.csv`). 
+This approach allows the program to:
+
+- Process changing grade data without modifying the core program
+- Apply consistent rules to incomplete or invalid grade values
+- Calculate total and maximum available points
+- Compare different grade scenarios
+- Generate a final percentage and letter grade
+- Provide information about course progress
+
+## ** Key Features**
+
+- Data processing with Python and Pandas
+- Reads assignment rules from a JSON file
+- Loads grade data from CSV files
+- Cleans and validates grade values
+- Removes negative scores and caps scores at their maximum allowed value
+- Preserves blank values for incomplete assessments
+- Calculates total points and maximum possible points
+- Calculates overall percentage and letter grade
+- Supports multiple grade scenarios
+- Integrates with the World Time API
+- Calculates course progress based on elapsed weeks
+- Uses external data sources instead of hardcoding assignment and grade information
 
 ## **Files Needed**
 
@@ -28,7 +39,25 @@ The program depends on four external files:
 1. `tasks.json` → Defines assignment types and rules (number of tasks, max points each)  
 2. `grades.csv` → Original grades for all units  
 3. `grades_0.csv` → Copy of `grades.csv` with Unit 8 grades set to 0 (shows what happens if Unit 8 is not done)  
-4. `grades_50.csv` → Copy of `grades.csv` with Unit 8 grades set to 50 (shows what happens if Unit 8 is done with full credit)  
+4. `grades_50.csv` → Copy of `grades.csv` with Unit 8 grades set to 50 (shows what happens if Unit 8 is done with full credit)
+
+## **Programs & Tools Used**
+
+### **Languages & Libraries**
+- Python
+- Pandas
+- Requests
+### **Data & File Handling** 
+- CSV
+- JSON
+- Data cleaning
+- Data validation
+- Data processing
+### **Other** 
+- REST API integration
+- Business-rule-based calculations
+- Scenario analysis
+- Automated reporting
 
 ## **How to Run It**
 
@@ -89,7 +118,7 @@ Your percentage is 100.00%
 Your letter grade is: A
 ```
 
-## **Repository Contents**
+## **Repository Structure**
 
 1. `GradeEstimator_ID.py` →** main Python file (all units combined)
 2. `tasks.json` →** assignment rules
@@ -106,13 +135,20 @@ Your letter grade is: A
 13. `unit8/` →** screenshot(s) for Unit 8
 14. `README.md` →** this document
 
-## **Notes**
+## **Project Context**
 
-This project was built step by step as part of the CIS615: Data analysis with Python course.
-It covers:
-- Taking input and showing output
-- Using JSON and CSV files
-- Connecting to APIs
-- Calculating total points, percentages, and letter grades
+This project was completed as part of CIS615: Data Analysis with Python and developed incrementally across Units 1–8. 
 
-The project is kept simple to make it easy to follow.
+The project demonstrates practical experience with data processing, validation, external data sources, API integration, calculations, and presenting analytical results through a Python application.
+
+## **Portfolio Relevance**
+
+This project demonstrates skills applicable to Data Analyst and Business Analyst roles, particularly in:
+
+- Working with structured data
+- Identifying and handling data-quality issues
+- Applying business rules to data
+- Automating repetitive calculations
+- Working with external data sources
+- Comparing scenarios and outcomes
+- Translating raw data into meaningful results
